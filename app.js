@@ -35,7 +35,7 @@ switch(accion) {
         let listaDeTareas = archivoTareas.leerPorEstado(valorBuscado);
         listaDeTareas.forEach((tarea, index)=> console.log(index,'.', tarea.titulo, '-', tarea.estado));
     // Deberiamos obtener el estado pasado como argumento y llamar al metodo
-    // filtrarPorEstado
+    // filtrarPorEstado ver
         break;
     case undefined:
         console.log('Tenés que pasarme una acción');
