@@ -1,9 +1,16 @@
 const autos = require('./autos');
 
 const concesionaria = {
-    autos: autos
+    autos: autos,
+    buscarAuto: function (patente){
+   for (let i = 0;i<autos.length;i++){
+       if (autos[i].patente== patente){
+           return autos[i];
+       }else{
+           return null;
+       }
+   }
+},
+
 }
-let buscarAuto = autos.find((patente, item) => {
-    return item.patente == patente;
-})
-console.log(buscarAuto('APL123'));
+console.log(concesionaria.buscarAuto('APL123'));
